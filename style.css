@@ -1,0 +1,275 @@
+/* Basic Reset & Font */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+h1, h2, h3 {
+    color: #212529; /* Darker headings */
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #007bff; /* Standard blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for centered content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header / Hero Section */
+#hero {
+    background-color: #343a40; /* Dark background for hero */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    color: #fff; 
+}
+
+#hero h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #adb5bd; /* Lighter subtitle */
+    margin-bottom: 1em;
+}
+
+#hero .summary {
+    max-width: 700px;
+    margin: 0 auto 20px auto; /* Center summary */
+    font-size: 1.1em;
+    color: #e9ecef; /* Slightly brighter text */
+}
+
+#hero .contact-info {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #ced4da;
+}
+#hero .contact-info a { color: #fff; } /* White links in header */
+#hero .contact-info span { margin: 0 10px; }
+#hero .contact-info i { margin-right: 5px; } /* Space for icons */
+
+.cta-buttons a.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.cta-buttons a.button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+.cta-buttons a.button-secondary {
+    background-color: #6c757d; /* Grey secondary button */
+}
+.cta-buttons a.button-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+/* Navigation (Optional Sticky) */
+#navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+     /* position: sticky; /* Uncomment for sticky nav */
+     /* top: 0; /* Uncomment for sticky nav */
+     /* z-index: 1000; /* Uncomment for sticky nav */
+}
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#navbar li {
+    display: inline-block;
+}
+#navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    font-weight: 500;
+}
+#navbar a:hover {
+    background-color: #f8f9fa;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee; /* Separator lines */
+}
+section:last-of-type {
+    border-bottom: none;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+/* Research Items */
+.research-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.research-item h3 {
+    margin-top: 0;
+    color: #0056b3; /* Highlight research titles */
+}
+.research-item em {
+    font-size: 0.9em;
+    color: #6c757d; /* Grey for dates/affiliation */
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+.skills-grid h3 {
+    color: #0056b3;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+}
+.skills-grid li {
+    background-color: #e9ecef; /* Light background for skill tags */
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: inline-block; /* Make them look like tags */
+    margin-right: 5px;
+}
+
+
+/* Publications */
+#publications ul {
+    list-style: none;
+    padding-left: 0;
+}
+#publications li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+/* Add a bullet point */
+#publications li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+/* Experience & Education Timeline (Basic) */
+.timeline {
+    position: relative;
+    /* Basic line - more advanced styling needed for a proper timeline */
+    /* border-left: 2px solid #007bff; */
+    /* padding-left: 20px; */
+}
+.timeline-item {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.timeline-item h3 {
+     margin-top: 0;
+     font-size: 1.2em;
+ }
+.timeline-item p { margin-bottom: 0.5em; }
+.timeline-item em { color: #6c757d; font-size: 0.9em;}
+
+
+/* Achievements */
+#achievements ul {
+    list-style: disc; /* Use standard bullets */
+    padding-left: 20px;
+}
+#achievements li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Match hero background */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px; /* Space before footer */
+}
+footer h2 { color: #fff; }
+footer p { color: #ced4da; }
+footer a.button { /* Style email button */
+     background-color: #17a2b8; /* Teal color */
+ }
+ footer a.button:hover {
+     background-color: #138496;
+ }
+
+.social-links {
+    margin: 20px 0;
+}
+.social-links a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+.social-links i {
+    margin-right: 5px;
+}
+.social-links a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 0.8em;
+    margin-top: 20px;
+    color: #adb5bd;
+}
+
+/* --- Add Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    #hero h1 { font-size: 2.5em; }
+    #hero h2 { font-size: 1.2em; }
+    .container { padding: 15px; }
+    #navbar ul { text-align: left; } /* Stack nav items maybe? */
+    #navbar li { display: block; text-align: center;}
+}
