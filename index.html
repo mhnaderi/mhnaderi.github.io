@@ -3,215 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Hossein Naderi, Machine Learning Researcher specializing in complex systems modeling.">
+    <meta name="description" content="Personal website of Hossein Naderi, Machine Learning Researcher specializing in complex systems modeling and scientific ML.">
     <title>Hossein Naderi - Machine Learning Researcher</title>
-    <!-- Link to your CSS file (we'll create this later) -->
-    <link rel="stylesheet" href="style.css"> 
-    <!-- Optional: Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+    </head>
 <body>
 
-    <header id="hero">
-        <div class="container">
+<header id="hero">
+    <div class="container">
+        <div class="profile-pic-container">
+            <img src="Pic.png" alt="Hossein Naderi" class="profile-pic">
+        </div>
+        <div class="hero-text">
             <h1>Hossein Naderi</h1>
-            <h2>Machine Learning Researcher | PhD Candidate</h2>
-            <p class="summary">
-                Innovative Machine Learning researcher developing advanced ML models for complex systems. Proven track record with 350+ citations, expertise in deep learning, data-driven modeling, Python, JAX, and TensorFlow. Seeking impactful roles translating complex concepts into efficient solutions.
-            </p>
             <div class="contact-info">
-                <span><i class="fas fa-envelope"></i> m.h.naderi@pitt.edu</span> |
-                <span><i class="fas fa-phone"></i> +1 (412) 626-0406</span> |
-                <span><i class="fas fa-map-marker-alt"></i> Pittsburgh, PA</span> |
-                <span><i class="fab fa-linkedin"></i> <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer">LinkedIn</a></span> |
-                <span><i class="fab fa-github"></i> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+                <span><i class="fas fa-envelope"></i> <a href="mailto:mhnaderi@live.com">mhnaderi@live.com</a></span>
+                <span><i class="fas fa-phone"></i> +1 (412) 626-0406</span>
+                <span><i class="fas fa-map-marker-alt"></i> Pittsburgh, PA</span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mohammad-hossein-naderi-80775095/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+                <span><i class="fab fa-github"></i> <a href="https://github.com/mhnaderi" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+                <span><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=hB03Hu4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></span>
             </div>
-            <div class="cta-buttons">
-                <a href="#research" class="button">View Research</a>
-                <a href="Hossein_Naderi_Resume.pdf" target="_blank" class="button button-secondary">Download Resume</a> 
-                </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <nav id="navbar">
-         <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-            </ul>
+<nav id="navbar">
+    <div class="container">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <!-- <li><a href="#contact-section">Contact</a></li> -->
+        </ul>
+    </div>
+</nav>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a Machine Learning Researcher pursuing my Ph.D. in Computational Modeling and Simulation at the University of Pittsburgh. My research centers on scientific machine learning (SciML), focusing on modeling complex systems and solving challenging partial differential equations (PDEs). I leverage techniques such as scalable Reduced-Order Modeling, achieving 1000x acceleration for nonlinear stochastic PDEs, and Deep Learning-based approaches, leading to 100x faster predictions for dynamical systems. I am proficient in Python, JAX, TensorFlow, and various ML/DL paradigms, including generative models and LLM fine-tuning. My project experience includes developing foundation models, applying Gaussian Processes, and utilizing Vision Transformers for dynamical systems prediction. My published research has accumulated over 350 citations, and I hold multiple awards, including a CMS Fellowship and the Best National Master's Thesis Award in Aerospace Engineering.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Ph.D. Computational Modeling and Simulation</h3>
+                <p><i class="fas fa-university"></i> University of Pittsburgh, USA</p>
+                <p><em><i class="fas fa-calendar-alt"></i> Aug 2021 - Present</em></p> <p><i class="fas fa-info-circle"></i> GPA: 4.0. Relevant Courses: Probabilistic Machine Learning, Bayesian Signal Processing, Tensor Networks, and Reduced Order Modeling.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>M.Sc. Aerospace Engineering - Aerodynamics</h3>
+                <p><i class="fas fa-university"></i> University of Tehran, Iran</p>
+                <p><em><i class="fas fa-calendar-alt"></i> Sep 2016 - Sep 2019</em></p>
+                <p><i class="fas fa-award"></i> GPA: 4.0. Relevant Courses: Advanced Deep Learning, Engineering Mathematics, Computational Fluid Dynamics, and Turbulence.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>B.Sc. Aerospace Engineering</h3>
+                <p><i class="fas fa-university"></i> K. N. Toosi University of Technology, Iran</p>
+                <p><em><i class="fas fa-calendar-alt"></i> Sep 2012 - Sep 2016</em></p>
+            </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am a Ph.D. Candidate in Computational Modeling and Simulation at the University of Pittsburgh, passionate about leveraging machine learning to understand and control complex physical phenomena. My work sits at the intersection of deep learning, scientific computing, and engineering, focusing on developing robust and scalable data-driven models. With a strong foundation in aerospace engineering and aerodynamics, I bring a unique perspective to applying advanced algorithms like Reinforcement Learning, Evolutional Deep Neural Networks, and Reduced-Order Modeling to challenging problems in fluid dynamics, chaotic systems, and PDE solutions. I am proficient in Python, JAX, and TensorFlow and dedicated to producing high-impact research, evidenced by publications in top-tier journals and over 350 citations.
-            </p>
-             </div>
-    </section>
-
-    <section id="research">
-        <div class="container">
-            <h2>Research Highlights</h2>
-
-            <div class="research-item">
-                <h3>Reinforcement Learning (RL) for Chaotic Systems Control</h3>
-                <p>Developed RL models (TRPO, PPO) improving control accuracy by 34% over baseline for complex chaotic systems.</p>
-                <em>University of Pittsburgh (Aug 2021 - Present)</em>
+<section id="research">
+    <div class="container">
+        <h2>Research Experience</h2>
+        <div class="card-grid">
+            <div class="institute-group">
+                <h3>University of Pittsburgh</h3>
+                <em>Graduate Research Assistant (Aug 2021 - Present)</em> </div>
+            <div class="card research-card">
+                <h4>Reinforcement Learning (RL) for Chaotic Systems Control</h4>
+                <p>Developed RL models (TRPO, PPO) that <strong>improved control accuracy by 34%</strong> for chaotic systems over baseline.</p>
+            </div>
+            <div class="card research-card">
+                <h4>Evolutional Deep Neural Networks (EDNN) for PDE Solutions</h4>
+                <p>Successfully implemented the Evolutional Deep Neural Network method using JAX. Applied this approach to solve dynamical systems, achieving <strong>90% accuracy</strong> in long-term predictions.</p>
+            </div>
+            <div class="card research-card">
+                <h4>Scalable Reduced-Order Modeling for Nonlinear Stochastic PDEs</h4>
+                <p>Developed innovative JAX-based approaches using GPU parallelization, <strong>accelerating models by 1000x</strong> without requiring offline computations for complex nonlinear stochastic PDEs.</p>
+            </div>
+            <div class="card research-card">
+                <h4>Implicit Time Integration of Random PDEs on Low-Rank Matrix Manifolds</h4>
+                <p>Formulated a novel computational approach using CUR-based low-rank approximation to efficiently solve challenging nonlinear stochastic PDEs, reducing calculation time and memory.</p>
             </div>
 
-             <div class="research-item">
-                <h3>Evolutional Deep Neural Networks (EDNN) for PDE Solutions</h3>
-                <p>Implemented EDNN using JAX to solve dynamical systems, achieving 90% accuracy in long-term predictions.</p>
-                 <em>University of Pittsburgh (Aug 2021 - Present)</em>
-             </div>
-
-            <div class="research-item">
-                <h3>Scalable Reduced-Order Modeling for Nonlinear Stochastic PDEs</h3>
-                <p>Created innovative JAX-based approaches using GPU parallelization, accelerating models by 1000x without offline computations.</p>
-                <em>University of Pittsburgh (Aug 2021 - Present)</em>
+             <div class="institute-group">
+                <h3>Vehicle, Fuel, and Environment Research Institute</h3>
+                <em>Research Assistant (Sep 2016 - Sep 2019)</em>
             </div>
-            
-            <div class="research-item">
-                <h3>Deep Learning-Based Reduced Order Modeling</h3>
-                <p>Developed Autoencoder-LSTM models in TensorFlow for dynamical systems, achieving predictions 100x faster than conventional methods.</p>
-                <em>Vehicle, Fuel, and Environment Research Institute (Sep 2016 - Sep 2019)</em>
+             <div class="card research-card">
+                <h4>Deep Learning-Based Reduced Order Modeling</h4>
+                <p>Developed Autoencoder-LSTM models in TensorFlow for dynamical systems, achieving predictions <strong>100x faster</strong> than conventional methods.</p>
             </div>
-
-            <div class="research-item">
-                <h3>ML-Driven Dynamic Mode Decomposition (DMD)</h3>
-                <p>Combined DMD with ML for unsteady flow analysis over moving structures, achieving >0.92 R² across diverse cases.</p>
-                 <em>Vehicle, Fuel, and Environment Research Institute (Sep 2016 - Sep 2019)</em>
-             </div>
-             
-             </div>
-    </section>
-
-     <section id="skills">
-         <div class="container">
-             <h2>Skills</h2>
-             <div class="skills-grid">
-                 <div>
-                     <h3>Programming & Tools</h3>
-                     <ul>
-                         <li>Python</li>
-                         <li>JAX</li>
-                         <li>TensorFlow</li>
-                         <li>Julia</li>
-                         <li>C++</li>
-                         <li>Git</li>
-                     </ul>
-                 </div>
-                 <div>
-                     <h3>Software</h3>
-                     <ul>
-                         <li>Ansys Suite (SpaceClaim, Meshing, Fluent)</li>
-                         <li>OpenFOAM</li>
-                         <li>ParaView</li>
-                     </ul>
-                 </div>
-                 <div>
-                     <h3>Specializations</h3>
-                     <ul>
-                         <li>Machine Learning</li>
-                         <li>Deep Learning</li>
-                         <li>Reinforcement Learning</li>
-                         <li>Reduced Order Methods</li>
-                         <li>Optimization</li>
-                         <li>Scientific Computing</li>
-                         <li>Computational Fluid Dynamics</li>
-                     </ul>
-                 </div>
-              </div>
-         </div>
-     </section>
-
-    <section id="publications">
-         <div class="container">
-            <h2>Selected Publications</h2>
-            <p>My research contributions have garnered over <strong>350 citations</strong>. View my full list on <a href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p> 
-            <ul>
-                <li>Naderi, M. H., et al. (2024). "CUR for Implicit Time Integration..." <em>Proceedings of the Royal Society A</em>.</li>
-                <li>Donello, M., Palkar, G., Naderi, M. H., et al. (2023). "Oblique projection for scalable rank-adaptive reduced-order modeling..." <em>Proceedings of the Royal Society A</em>.</li>
-                <li>Naderi, M. H., Babaee, H. (2023). "Adaptive sparse interpolation for accelerating nonlinear stochastic reduced-order modeling..." <em>Computer Methods in Applied Mechanics and Engineering</em>.</li>
-                <li>Eivazi, H., Veisi, H., Naderi, M. H., Esfahanian, V. (2020). "Deep Neural Networks for Nonlinear Model Order Reduction..." <em>Physics of Fluids</em>.</li>
-                <li>Naderi, M. H., et al. (2019). "New Method for Dynamic Mode Decomposition... (Hybrid Dynamic Mode Decomposition)." <em>Physics of Fluids</em>.</li>
-            </ul>
+             <div class="card research-card">
+                <h4>ML-Driven Dynamic Mode Decomposition (DMD)</h4>
+                <p>Combined DMD with ML for unsteady flow analysis over moving structures, achieving <strong>>0.92 R²</strong> across diverse cases.</p>
+            </div>
+             <div class="card research-card">
+                <h4>Wind Turbine Optimization & Analysis</h4>
+                <p>Designed optimization for Savonius turbines (<strong>+27% power</strong>) and applied DMD for wake prediction (<strong>-52% simulation time</strong>).</p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="experience-education">
-         <div class="container">
-            <h2>Experience & Education</h2>
-            <div class="timeline">
-                 <div class="timeline-item">
-                     <h3>Ph.D. Computational Modeling and Simulation</h3>
-                     <p>University of Pittsburgh, USA (GPA: 4.0)</p>
-                     <p><em>Aug 2021 - Present</em></p>
-                 </div>
-                  <div class="timeline-item">
-                     <h3>Graduate Teaching Assistant</h3>
-                     <p>University of Pittsburgh, PA, USA</p>
-                     <p><em>Jan 2022 - Apr 2024</em></p>
-                 </div>
-                 <div class="timeline-item">
-                     <h3>M.Sc. Aerospace Engineering - Aerodynamics</h3>
-                     <p>University of Tehran, Iran (GPA: 4.0) - Ranked 1st</p>
-                     <p><em>Sep 2016 - Sep 2019</em></p>
-                 </div>
-                <div class="timeline-item">
-                     <h3>Lab Manager - Computational Fluid Dynamics Lab</h3>
-                     <p>University of Tehran, Tehran, Iran</p>
-                     <p><em>Jun 2018 - Dec 2018</em></p>
-                 </div>
-                 <div class="timeline-item">
-                     <h3>B.Sc. Aerospace Engineering</h3>
-                     <p>K. N. Toosi University of Technology, Iran</p>
-                     <p><em>Sep 2012 - Sep 2016</em></p>
-                 </div>
-             </div>
-         </div>
-     </section>
-
-     <section id="achievements">
-         <div class="container">
-             <h2>Achievements & Contributions</h2>
-             <ul>
-                 <li>Research publications garnered over 350 citations.</li>
-                 <li>Author of "Scientific ML Notes" GitHub repository.</li>
-                 <li>Awarded CMS Fellowship, University of Pittsburgh.</li>
-                 <li>Recipient of Monash Graduate Scholarship.</li>
-                 <li>Received Best National Master's Thesis Award in Aerospace Engineering.</li>
-                 <li>Ranked 1st in M.Sc. Aerodynamics Department, University of Tehran.</li>
-             </ul>
-         </div>
-     </section>
-
-
-    <footer id="contact-section">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to discussing new research ideas, collaborations, or opportunities.</p>
-            <p>
-                <a href="mailto:m.h.naderi@pitt.edu" class="button">Email Me</a>
-            </p>
-             <div class="social-links">
-                <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a> |
-                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-             </div>
-             <p class="copyright">© <span id="year"></span> Hossein Naderi. All rights reserved.</p>
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="card-grid">
+            <div class="card project-card">
+                <h3>Fine-tuned LLM for Scientific ML QA</h3>
+                <p>Fine-tuned T5/BERT on scientific literature (Hugging Face). Answered <strong>>80%</strong> of test questions accurately.</p>
+            </div>
+            <div class="card project-card">
+                <h3>Foundation Model for Dynamical Systems</h3>
+                <p>Built LSTM/Transformer model simulating diverse systems (Advection-Diffusion/Helmholtz) with <strong><5% error</strong> in short-term prediction.</p>
+            </div>
+            <div class="card project-card">
+                <h3>Gaussian Process Time Series Forecasting</h3>
+                <p>Applied GP regression (`tinygp`) with optimized kernels to forecast stock prices (<strong><2% MAPE</strong>) with uncertainty bounds.</p>
+            </div>
+            <div class="card project-card">
+                <h3>MLOps Pipeline for PINNs</h3>
+                <p>Designed basic MLOps pipeline (JAX, Docker concept) for deploying a PINN solver (<strong>>10x speedup</strong> vs SOTA).</p>
+            </div>
+            <div class="card project-card">
+                <h3>Generative Diffusion Surrogates for PDEs</h3>
+                <p>Developed conditional diffusion model as fast surrogate for PDE solvers (Gray-Scott/Navier-Stokes), achieving <strong>>100x speedup</strong>.</p>
+            </div>
+            <div class="card project-card">
+                <h3>ViT + Transformer for Complex Dynamics</h3>
+                <p>Hybrid ViT+Transformer model for predicting image sequences (e.g., reaction-diffusion). Achieved low prediction error (<strong>MSE < 1e-4</strong>).</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- Simple JS to update year -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-    <!-- Optional: Add smooth scrolling JS if needed -->
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <ul>
+                    <li>Python</li><li>NumPy</li><li>SciPy</li><li>Pandas</li><li>Scikit-learn</li>
+                    <li>JAX</li><li>TensorFlow</li><li>Julia</li><li>C++</li><li>Git</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> Specializations</h3>
+                 <ul>
+                    <li>Machine Learning</li><li>Deep Learning</li><li>Reinforcement Learning</li>
+                    <li>Generative Models</li><li>LLM Fine-tuning</li><li>Bayesian Inference</li>
+                    <li>Statistical Modeling</li><li>Scientific Computing</li><li>Linear Algebra</li>
+                 </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-cogs"></i> MLOps</h3>
+                 <ul>
+                    <li>MLflow</li><li>W&B</li><li>GitHub Actions</li>
+                    <li>Docker</li><li>GCP</li><li>Streamlit</li>
+                 </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                 <ul>
+                    <li>Teamwork</li><li>Self-motivation</li><li>Communication</li>
+                    <li>Project Management</li><li>Scientific Writing</li><li>Problem Solving</li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="publications">
+    <div class="container">
+        <h2>Publications</h2>
+        <ul>
+            <li><a href="https://doi.org/10.1098/rspa.2024.0658" target="_blank" rel="noopener noreferrer">Naderi, M. H., et al. (2024). "CUR for Implicit Time Integration of Random Partial Diﬀerential Equations on Low-Rank Matrix Manifolds" <em>Proceedings of the Royal Society A</em>.</a></li>
+            <li><a href="https://doi.org/10.1098/rspa.2023.0320" target="_blank" rel="noopener noreferrer">Donello, M., Palkar, G., Naderi, M. H., et al. (2023). "Oblique projection for scalable rank-adaptive reduced-order modeling of nonlinear stochastic PDEs with time-dependent bases." <em>Proceedings of the Royal Society A</em>.</a></li>
+            <li><a href="https://doi.org/10.1016/j.cma.2022.115813" target="_blank" rel="noopener noreferrer">Naderi, M. H., Babaee, H. (2023). "Adaptive sparse interpolation for accelerating nonlinear stochastic reduced-order modeling with time-dependent bases." <em>Computer Methods in Applied Mechanics and Engineering</em>.</a></li>
+            <li><a href="http://doi.org/10.1063/5.0020526" target="_blank" rel="noopener noreferrer">Eivazi, H., Veisi, H., Naderi, M. H., Esfahanian, V. (2020). "Deep Neural Networks for Nonlinear Model Order Reduction of Unsteady Flows." <em>Physics of Fluids</em>.</a></li>
+            <li><a href="http://doi.org/10.1016/j.jclepro.2019.02.237" target="_blank" rel="noopener noreferrer">Masdari, M., Tahani, M., Naderi, M. H., Babayan, N. (2019). "Optimization of Airfoil Based Savonius Wind Turbine Using Coupled Discrete Vortex Method and Salp Swarm Algorithm." <em>Journal of Cleaner Production</em>.</a></li>
+            <li><a href="http://doi.org/10.1063/1.5128341" target="_blank" rel="noopener noreferrer">Naderi, M. H., et al. (2019). "New Method for Dynamic Mode Decomposition of Flows over Moving Structures Based on Machine Learning (Hybrid Dynamic Mode Decomposition)." <em>Physics of Fluids</em>.</a></li>
+            <li><a href="http://doi.org/10.1063/1.5127268" target="_blank" rel="noopener noreferrer">Naderi, M. H., et al. (2019). "Dynamic Mode Decomposition Analysis for Savonius Wind Turbine." <em>Journal of Renewable and Sustainable Energy</em>.</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="conferences">
+    <div class="container">
+        <h2>Conference Presentations</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Model Reduction and Surrogate Modeling Conference</h3>
+                <p><i class="fas fa-map-marker-alt"></i> La Jolla, CA</p>
+                <p><em><i class="fas fa-calendar-alt"></i> Sep 2024</em></p>
+            </div>
+            <div class="timeline-item">
+                <h3>SIAM Conference on Uncertainty Quantification</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Trieste, Italy</p>
+                <p><em><i class="fas fa-calendar-alt"></i> Feb 2024</em></p>
+            </div>
+            <div class="timeline-item">
+                <h3>SIAM Conference on Numerical Methods for PDEs (SIAM-NNP)</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Newark, NJ</p>
+                <p><em><i class="fas fa-calendar-alt"></i> Oct 2023</em></p>
+            </div>
+            <div class="timeline-item">
+                <h3>APS Division of Fluid Dynamics Annual Meeting</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Indianapolis, IN / Washington, DC / Salt Lake City, UT</p>
+                <p><em><i class="fas fa-calendar-alt"></i> 2022, 2023, 2024</em></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="achievements">
+    <div class="container">
+        <h2>Achievements & Contributions</h2>
+        <ul class="fa-ul"> <li><span class="fa-li"><i class="fas fa-award"></i></span>Research publications garnered over <strong>350 citations</strong>.</li>
+            <li><span class="fa-li"><i class="fas fa-book"></i></span>Author of <a href="https://github.com/mhnaderi/Scientific-ML-Notes" target="_blank" rel="noopener noreferrer"><strong>"Scientific ML Notes"</strong></a> GitHub repository.</li>
+            <li><span class="fa-li"><i class="fas fa-medal"></i></span>Awarded <strong>CMS Fellowship</strong>, University of Pittsburgh.</li>
+            <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>Recipient of <strong>Monash Graduate Scholarship</strong> (Declined).</li>
+            <li><span class="fa-li"><i class="fas fa-trophy"></i></span>Received <strong>Best National Master's Thesis Award</strong> in Aerospace Engineering, Iran.</li>
+            <li><span class="fa-li"><i class="fas fa-star"></i></span><strong>Ranked 1<sup>st</sup></strong> in M.Sc. Aerodynamics Department, University of Tehran.</li>
+        </ul>
+    </div>
+</section>
+
+<footer id="contact-section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p>I'm always open to discussing new research ideas, collaborations, or opportunities.</p>
+        <p>
+            <a href="mailto:mhnaderi@live.com" class="button">Email Me</a>
+        </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mohammad-hossein-naderi-80775095/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/mhnaderi" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://scholar.google.com/citations?user=hB03Hu4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fas fa-graduation-cap fa-lg"></i></a>
+        </div>
+        <p class="copyright">© <span id="year"></span> Hossein Naderi. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
