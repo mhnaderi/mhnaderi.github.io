@@ -1,4 +1,4 @@
-# Hossein Naderi - Personal Website Source Code
+# mhnaderi.github.io
 
 You can access the live version of the website here:
 
