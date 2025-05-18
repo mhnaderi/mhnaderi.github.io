@@ -185,12 +185,42 @@ section h2::after {
     padding: 25px;
     border-radius: 8px;
     box-shadow: var(--card-shadow);
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, background-color var(--transition-speed) ease; /* Added background-color transition */
     border-left: 4px solid var(--primary-color); /* Accent border */
+    position: relative; /* Needed for absolute positioning of pseudo-elements if added */
 }
-.card:hover {
+/* Make the entire card area indicate clickability */
+.research-card a.card-link,
+.project-card a.card-link {
+    display: block; /* Make the link fill the card area */
+    color: inherit; /* Use parent text color */
+    text-decoration: none; /* Remove underline */
+    height: 100%; /* Ensure it fills the card vertically */
+    cursor: pointer; /* Change cursor to pointer */
+}
+/* Enhance hover effect for clickable cards */
+.research-card:hover,
+.project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* Slightly stronger shadow */
+    background-color: #f0f8ff; /* Subtle background change on hover (AliceBlue) */
+}
+/* Optional: Add an arrow icon on hover */
+.research-card a.card-link::after,
+.project-card a.card-link::after {
+    content: '\f061'; /* Font Awesome arrow-right icon */
+    font-family: 'Font Awesome 6 Free'; /* Ensure Font Awesome is loaded */
+    font-weight: 900;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: var(--primary-color);
+    opacity: 0; /* Hidden by default */
+    transition: opacity var(--transition-speed) ease;
+}
+.research-card:hover a.card-link::after,
+.project-card:hover a.card-link::after {
+    opacity: 1; /* Show arrow on hover */
 }
 .card h3, .card h4 {
     margin-top: 0;
@@ -200,6 +230,7 @@ section h2::after {
 .card p {
     font-size: 0.95em;
     margin-bottom: 0; /* Remove default bottom margin */
+    padding-bottom: 20px; /* Add padding to prevent text overlap with potential icon */
 }
 .institute-group {
     grid-column: 1 / -1; /* Make institute header span full width */
@@ -260,7 +291,6 @@ section h2::after {
     line-height: 1.8; /* Improve readability */
     position: relative;
 }
-/* Optional: Custom counter style
 #publications li::before {
     content: counter(pub-counter);
     counter-increment: pub-counter;
@@ -277,7 +307,7 @@ section h2::after {
     text-align: center;
     font-size: 0.85em;
 }
-*/
+
 #publications li a { display: inline; } /* Allow text justification to work better */
 #publications li em { font-style: normal; color: var(--secondary-color); } /* De-italicize journal */
 .citation-note {
